@@ -1,0 +1,92 @@
+/* 轮播图 */
+#carousel {
+  position: relative;
+
+  overflow: hidden;
+
+  width: 100%;
+  height: 300px;
+  margin: 50px 0;
+}
+
+h2{
+	margin-top: 10px;
+	text-align: center;
+}
+
+#carousel img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+
+  height: 100%;
+
+  transition: opacity 1s;
+  transform: translateX(-50%);
+
+  opacity: 0;
+}
+
+#carousel img.active {
+  z-index: 1;
+
+  opacity: 1;
+}
+
+/* 优惠公告列表 */
+#promotions {
+  width: 50%;
+  margin: 0 auto;
+}
+
+#promotions ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+#promotions li {
+  padding: 20px;
+
+  border-bottom: 1px solid #ccc;
+}
+
+#promotions h3 {
+  margin: 0;
+
+  font-size: 20px;
+}
+
+#promotions p {
+  margin: 10px 0;
+
+  color: #777;
+
+  font-size: 14px;
+}
+
+/* 翻页按钮 */
+.pagination {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 20px 0;
+}
+
+.pagination button {
+  padding: 10px 20px;
+
+  cursor: pointer;
+
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  background: #00bfff;
+}
+
+.pagination button:disabled {
+  cursor: not-allowed;
+
+  background: #ddd;
+}

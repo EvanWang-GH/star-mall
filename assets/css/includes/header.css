@@ -1,0 +1,42 @@
+/* 头部 */
+header {
+  display: flex;
+  align-items: center;
+
+  height: 50px;
+
+  background-color: #f5f5f5;
+}
+
+/* 头部导航 */
+header nav {
+  display: flex;
+  align-items: center;
+}
+
+header nav a {
+  display: block;
+
+  height: 50px;
+  padding: 0 20px;
+
+  text-decoration: none;
+
+  color: #777;
+
+  line-height: 50px;
+}
+
+header nav a:hover {
+  background-color: #eee;
+}
+
+.logo-box {
+  display: flex;
+  align-items: center;
+}
+
+.logo-box img {
+	margin:0 20px;
+  height: 30px;
+}
